@@ -15,7 +15,12 @@
   },
   "glslify": {
     "transform": [
-      ["glslify-test", { "post":true }]
+      [
+        "glslify-test",
+        {
+          "post": true
+        }
+      ]
     ]
   }
 }
