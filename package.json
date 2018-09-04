@@ -1,0 +1,21 @@
+{
+  "name": "test_glslify",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run init && budo --open index.js -- -t glslify",
+    "init": "cp -Rf glslify-test node_modules/"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "budo": "^11.3.2",
+    "glslify": "^6.3.0"
+  },
+  "glslify": {
+    "transform": [
+      ["glslify-test", { "post":true }]
+    ]
+  }
+}
